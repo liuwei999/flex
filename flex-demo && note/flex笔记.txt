@@ -1,0 +1,40 @@
+flex
+	父级元素设置  display：flex;
+    每个人子集元素会适应父级元素
+    flex-direction:row；自己元素会  缩成一排适应父级
+    flex-direction:column;每一行变成100%的宽度
+    flex-wrap:no-wrap; 默认为 no-wrap;
+    父级元素有宽度，子级元素也有宽度，  不设置flex-wrap:wrap; 子集元素会合理占据空间不会超出父级元素
+    若设置了   wrap   就会换行;
+    如果子级元素没有高度   父级元素设置了高度   子级元素会适应父级元素的高度垂直方向也是合理占据空间
+
+    justify-content   对齐内容
+    justify-content:flex-start; 默认值  开始位置对齐
+                    center;    中间位置对齐
+                    flex-end;     结束位置对齐
+                    space-between; 开始和结束位置没有缝隙
+                    space-around;  开始和结束位置有空隙
+
+    flex  属性   flex:1;
+                    2;
+    父级元素设置display：flex;  子级设置  flex：1；元素会等宽显示合理占据空间
+    其中一个子元素设置flex：2；的时候  他的宽度是其他子元素的一倍屏幕缩放的时候也不会变
+
+    flex的3个属性
+    flex-basis    基本宽度 子级元素不设置宽度 设置flex-basis:100px;元素的基本宽度是100像素；
+    flex-shrink   挤扁    当屏幕宽度发生变化时 变小
+    flex-grow     拉长    当屏幕宽度发生变化时 拉长
+
+    flex-shrink：1；子元素都有这个属性   当屏幕宽度不够是  等比缩小
+    其中一个子元素设置 flex-shrink:2; 屏幕宽度不够是  缩小2像素 其他缩小一像素
+    flex-shrink:0; 值为0 时，不允许压缩；
+
+    当一个元素包含3个属性的时候 可以简写
+    flex-grow:2;
+    flex-shrink:0;
+    flex-basis:300px;
+    简写为：  flex:2 0 300px;
+
+    order:0;  order值 用来控制左右顺序的   默认值为0； 设置-1  就会到前边
+
+    flex参考 网站    flexbox.io  && css-tricks.com
